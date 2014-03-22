@@ -6,7 +6,8 @@ if [ -f bin/pre_compile ]; then
     sub-env bin/pre_compile
 fi
 
-chmod +x bin/steps/hooks/node-compile
-sub-env bin/steps/hooks/node-compile
+pwd
+chmod +x bin/steps/hooks/node_compile
+sub-env bin/steps/hooks/node_compile
 
 npm install -g ember-precompile
