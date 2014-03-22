@@ -78,4 +78,5 @@ echo "export PATH=\"\$HOME/vendor/node/bin:\$HOME/bin:\$HOME/node_modules/.bin:\
 echo "-----> installing ember-precompile"
 npm install -g ember-precompile --silent
 
-cd $build_dir
+pwd
+cd /app
