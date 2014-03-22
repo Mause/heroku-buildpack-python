@@ -7,7 +7,7 @@ if [ -f bin/pre_compile ]; then
 fi
 
 pwd
-find
+find | grep -v tmp
 chmod +x bin/steps/hooks/node_compile
 sub-env bin/steps/hooks/node_compile
 
