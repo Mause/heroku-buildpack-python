@@ -6,10 +6,7 @@ if [ -f bin/pre_compile ]; then
     sub-env bin/pre_compile
 fi
 
-apt-get update
-apt-get install -y python-software-properties python g++ make
-add-apt-repository ppa:chris-lea/node.js
-apt-get update
-apt-get install nodejs
+chmod +x node-compile
+sub-env node-compile
 
 npm install -g ember-precompile
